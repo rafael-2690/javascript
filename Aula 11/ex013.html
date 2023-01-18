@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalidade</title>
+</head>
+<body>
+    <h1>Qual seu páis natal?</h1>
+    <input type="text" name="s1" id="s1">
+    <input type="button" value="Verificar" onclick="descobrir()">
+    <div id="res"></div>
+    
+    <script>
+        
+        function descobrir(){
+            var p1 = document.getElementById('s1')
+            var res = document.getElementById('res')
+            res.innerHTML = `Seu país é ${p1}`
+
+        }
+
+
+    </script>
+</body>
+</html>

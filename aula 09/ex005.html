@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: brown;
+            font: normal 20pt Arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando a usar o DOM</h1>
+    <p>Aqui vai um parágrafo</p>
+    <p>Aprendendo a <strong>DOM<strong> </p>
+    <div class="msg">Click em mim</div>
+    
+    <script>
+        var corpo= document.body
+        corpo.style.background = 'black'
+        var d = document.querySelector('div.msg')
+        d.style.color = 'blue'
+        d.style.background = 'green'
+        d.innerHTML = 'Aguarde...'
+    </script>
+</body>
+</html>
